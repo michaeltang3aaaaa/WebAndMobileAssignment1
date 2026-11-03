@@ -77,8 +77,21 @@
     grid-template-columns: 1fr;
   }
   .travelPackageTitle img {
-    height: 20%;
-    width: 20%;
+    height: 15%;
+    width: 15%;
+  }
+  .travelPackageElement {
+    padding-bottom: 0px;
+  }
+  .travelPackageRating {
+    padding-bottom: 0px;
+  }
+}
+
+@media (min-width: 520px) and (max-width: 767px) {
+  .travelPackageFlexbox {
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
   }
   .travelPackageElement {
     padding-bottom: 0px;
