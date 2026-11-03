@@ -1,0 +1,56 @@
+[
+    {
+        "ID": 1,
+        "DestinationName": "Kuala Lumpur",
+        "Category": "City",
+        "Price": 900,
+        "Duration": "5 Days 4 Nights",
+        "Rating": 4.8,
+        "ImagePath": "../images/KualaLumpur.jpg"
+    },
+    {
+        "ID": 2,
+        "DestinationName": "Pulau Redang",
+        "Category": "Adventure",
+        "Price": 1100,
+        "Duration": "4 Days 3 Nights",
+        "Rating": 4.9,
+        "ImagePath": "../images/PulauRedang.jpg"
+    },
+    {
+        "ID": 3,
+        "DestinationName": "Mount Kinabalu",
+        "Category": "Adventure",
+        "Price": 1300,
+        "Duration": "3 Days 2 Nights",
+        "Rating": 4.6,
+        "ImagePath": "../images/MountKinabalu.jpg"
+    },
+    {
+        "ID": 4,
+        "DestinationName": "Penang",
+        "Category": "City",
+        "Price": 900,
+        "Duration": "6 Days 5 Nights",
+        "Rating": 4.8,
+        "ImagePath": "../images/Penang.jpg"
+    },
+    {
+        "ID": 5,
+        "DestinationName": "Langkawi",
+        "Category": "Adventure",
+        "Price": 1000,
+        "Duration": "5 Days 4 Nights",
+        "Rating": 4.7,
+        "ImagePath": "../images/LangkawiView.jpg"
+    },
+    {
+        "ID": 6,
+        "DestinationName": "Melaka",
+        "Category": "City",
+        "Price": 900,
+        "Duration": "5 Days 4 Nights",
+        "Rating": 4.5,
+        "ImagePath": "../images/Melaka.jpg"
+    }
+]

@@ -1,0 +1,92 @@
+@import "../App.css";
+
+.home_introduce_container {
+  display: grid;
+  grid-template-columns: 0.8fr 2fr;
+  background-color: var(--background-light-main);
+  transition: all 1s ease;
+}
+
+.introduce_image_container {
+  width: 31.25rem;
+  flex-shrink: 0;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.img1 {
+  /*city image*/
+  position: absolute;
+  top: 8%;
+  left: 5%;
+  width: 75%;
+  height: auto;
+  z-index: 1;
+}
+
+.img2 {
+  /*Nature image*/
+  position: absolute;
+  top: 55%;
+  left: 45%;
+  width: 75%;
+  height: auto;
+  z-index: 2;
+}
+
+.introduce_word_container {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 3.125rem 0.625rem;
+  gap: 2.5rem;
+  width: 70%;
+}
+
+.home_paragraph {
+  font-size: 1.5rem;
+  color: var(--paragraph);
+}
+
+@media (max-width: 520px) {
+  #AppHeader h1 {
+    align-self: center;
+    font-size: 35px;
+  }
+  #AppHeader h3 {
+    align-self: center;
+    font-size: 1rem;
+  }
+  .home_introduce_container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .introduce_image_container {
+    width: 25rem;
+    margin-bottom: 15rem;
+  }
+  .img1 {
+    /*city image*/
+    padding-top: 3%;
+    left: 5%;
+    width: 70%;
+    height: auto;
+    z-index: 1;
+  }
+  .img2 {
+    /*Nature image*/
+    padding-top: 30%;
+    left: 45%;
+    width: 70%;
+    height: auto;
+    z-index: 2;
+  }
+  #AppHeader ul a {
+    font-size: 1rem;
+  }
+  #AppHeader ul {
+    gap: 0.3125rem;
+  }
+}
+

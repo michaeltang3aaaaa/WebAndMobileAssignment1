@@ -1,0 +1,175 @@
+:root {
+  --background-main: #4167b1;
+  --background-light-main: #def0f9;
+  --background-light-second: #d4e5ee;
+  --background-light-third: #cadae2;
+  --background-dark-main: #2e436a;
+  --background-form-input: #698ac3;
+  --background-form-input-focus: #4167b1;
+  --back-link: #1b1f23;
+  --back-link-background-hover: #4167b1;
+  --back-link-hover: #4167b1;
+  --paragraph: #38558e;
+  --contact-form-button: #38558e;
+  --light-text: #def0f9;
+  --white-text: #ffffff;
+  --black-text: #1b1f23;
+
+  --toggle-theme-button-background: #def0f9;
+}
+
+body.dark-mode {
+  --background-main: #121927;
+  --background-light-main: #1e293b;
+  --background-light-second: #334155;
+  --background-light-third: #475569;
+  --background-dark-main: #0f172a;
+  --background-form-input: #334155;
+  --background-form-input-focus: #475c69;
+  --back-link: #e2e8f0;
+  --back-link-background-hover: #3b82f6;
+  --back-link-hover: #3b82f6;
+  --paragraph: #e2e8f0;
+  --contact-form-button: #0f172a;
+  --light-text: #f1f5f9;
+  --white-text: #ffffff;
+  --black-text: #e2e8f0;
+  --header-border: #334155;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-main);
+  min-height: 100vh;
+}
+
+#AppHeader {
+  background: var(--background-main);
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  border-bottom: 2px solid var(--black-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 1s ease;
+}
+
+#AppHeader.header-open {
+  max-height: 20rem;
+}
+
+#AppHeader.header-closed {
+  max-height: 7.5rem;
+}
+
+.header-content {
+  padding: 20px 20px 0px 20px;
+  overflow: hidden;
+  flex: 1;
+}
+
+#AppHeader h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--light-text);
+  margin-bottom: 0;
+  text-align: left;
+  font-size: 2.5rem;
+}
+
+#AppHeader h3 {
+  color: var(--light-text);
+  text-align: right;
+  font-size: 1.25rem;
+}
+
+#AppHeader .nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.875rem;
+  list-style: none;
+  padding: 10px 10px;
+}
+
+#AppHeader .nav-menu-item {
+  padding: 20px;
+  text-decoration: none;
+  color: var(--light-text);
+  border-radius: 50px;
+  font-size: 1.5rem;
+  transition: all 0.6s ease;
+}
+
+#AppHeader .nav-menu-item:hover {
+  background: var(--background-light-main);
+  color: var(--black-text);
+}
+
+#AppHeader ul li:not(:last-child)::after {
+  content: "|";
+  margin-left: 1.25rem;
+}
+
+/* Toggle Button Bar at the bottom */
+.header-toggle-btn {
+  width: 100%;
+  height: 1rem;
+  background-color: var(--background-dark-main);
+  border: none;
+  border-top: 2px solid var(--black-text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; /* Prevents the button from getting squished */
+  transition: all 0.6s ease;
+}
+
+.header-toggle-btn:hover {
+  background: #2e436a;
+}
+
+/* CSS Arrow Icon */
+.arrow-icon {
+  padding: 4px;
+  border: solid var(--light-text);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  transition: all 0.6s ease;
+}
+
+.arrow-icon.up {
+  transform: rotate(-135deg); /* Points up when header is open */
+  margin-top: 4px;
+}
+
+.arrow-icon.down {
+  transform: rotate(45deg); /* Points down when header is closed */
+  margin-bottom: 4px;
+}
+
+.footer {
+  padding: 20px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--light-text);
+  text-align: center;
+}
+
+@media (max-width: 520px) {
+  :root {
+    --background-main: yellow;
+  }
+  #AppHeader .nav-menu-item {
+    padding: 0px;
+    margin: 15px 0px 0px 0px;
+    font-size: 1.3rem;
+  }
+
+}

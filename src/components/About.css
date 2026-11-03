@@ -1,0 +1,174 @@
+@import "../App.css";
+
+.about-page {
+  background: var(--background-light-second);
+  width: 100%;
+  color: var(--black-text);
+  padding-bottom: 3rem;
+}
+
+/* Top heading section */
+.about-heading {
+  background: var(--background-light-main);
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-heading h1 {
+  color: var(--black-text);
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 0.8rem;
+}
+
+.about-heading h2 {
+  color: #286bb2;
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  margin-bottom: 0.8rem;
+}
+
+.about-heading p {
+  color: var(--paragraph);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+/* About description */
+.about-description {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.about-description h2 {
+  color: var(--black-text);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.about-description p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: var(--paragraph);
+}
+
+/* Highlight introduction */
+.about-highlights {
+  background: var(--background-light-third);
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.about-highlights > h2 {
+  color: var(--black-text);
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
+  margin-bottom: 1rem;
+}
+
+.highlights-intro {
+  max-width: 850px;
+  margin: 0 auto 2rem;
+  color: var(--black-text);
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+/* Four-column card layout */
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.25rem;
+  max-width: 1150px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.highlight-card {
+  border: 2px solid var(--light-text);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-light-second);
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--black-text);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.highlight-card:focus-visible {
+  outline: 3px solid #286bb2;
+  outline-offset: 4px;
+}
+
+.highlight-card img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.highlight-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.7rem;
+  padding: 1.2rem;
+  flex: 1;
+}
+
+.highlight-card h3 {
+  color: #286bb2;
+  font-size: 1.2rem;
+}
+
+.highlight-card p {
+  line-height: 1.6;
+  font-size: 1.2rem;
+  flex: 1;
+}
+
+.highlight-card span {
+  color: #4935b3;
+  font-weight: 700;
+  margin-top: 0.3rem;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .highlight-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+@media (max-width: 520px) {
+  .about-heading {
+    padding: 2rem 1rem;
+  }
+
+  .about-description,
+  .about-highlights {
+    padding: 1.5rem 1rem;
+  }
+
+  .highlight-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .highlight-card img {
+    height: 220px;
+  }
+}
