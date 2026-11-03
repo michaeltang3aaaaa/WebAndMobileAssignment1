@@ -135,3 +135,15 @@
   font-weight: 600;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
+
+@media (max-width: 520px) {
+  .contact_card_grid {
+    grid-template-columns: 1fr;
+  }
+  .contact_card_left_image {
+    max-height: 500px;
+  }
+  .contact_card_title {
+    margin-top: 2rem;
+  }
+}

@@ -163,13 +163,9 @@ body {
 }
 
 @media (max-width: 520px) {
-  :root {
-    --background-main: yellow;
-  }
   #AppHeader .nav-menu-item {
     padding: 0px;
     margin: 15px 0px 0px 0px;
     font-size: 1.3rem;
   }
-
 }

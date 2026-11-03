@@ -68,6 +68,7 @@
 .travelPackageRating img {
   margin: 0 2px;
   width: 5%;
+  background-color: var(--background-dark-main);
 }
 
 @media (max-width: 520px) {
