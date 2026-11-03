@@ -137,13 +137,25 @@
 }
 
 @media (max-width: 520px) {
+  .contact_card_container {
+    padding: 1rem;
+  }
   .contact_card_grid {
     grid-template-columns: 1fr;
   }
   .contact_card_left_image {
-    max-height: 500px;
+    max-height: 300px;
   }
   .contact_card_title {
     margin-top: 2rem;
+  }
+  .contact_card_title {
+    font-size: 2rem;
+  }
+  .form_element_label {
+    font-size: 1rem;
+  }
+  .form_input {
+    padding: 0px ;
   }
 }
