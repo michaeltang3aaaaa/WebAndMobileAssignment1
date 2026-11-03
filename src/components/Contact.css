@@ -148,8 +148,6 @@
   }
   .contact_card_title {
     margin-top: 2rem;
-  }
-  .contact_card_title {
     font-size: 2rem;
   }
   .form_element_label {
@@ -158,5 +156,33 @@
   .form_input {
     padding: 5px;
     font-size: 1rem;
+  }
+  .contact_form_submit_button {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (min-width: 520px) and (max-width: 767px) {
+  .contact_card_grid {
+    gap: 3rem;
+  }
+  .contact_card_title {
+    font-size: 2rem;
+  }
+  .form_element_label {
+    font-size: 1.5rem;
+  }
+  .contact_card_left {
+    width: fit-content;
+    height: fit-content;
+  }
+  .form_input {
+    padding: 5px;
+    font-size: 1rem;
+  }
+  .contact_form_submit_button {
+    font-size: 1rem;
+    padding: 0.5rem;
   }
 }
